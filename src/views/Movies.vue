@@ -6,7 +6,7 @@
 
         <template v-else>
             <MovieList />
-            <!-- <PeopleTable v-show="getCharacters" /> -->
+            <CharactersTable />
         </template>
     </section>
 </template>
@@ -14,14 +14,14 @@
 <script>
 import { mapActions, mapGetters } from 'vuex';
 import MovieList from '@/components/MovieList';
-import PeopleTable from '@/components/PeopleTable';
+import CharactersTable from '@/components/CharactersTable';
 
 export default {
     name: 'Movies',
 
     components: {
         MovieList,
-        PeopleTable
+        CharactersTable
     },
 
     computed: {

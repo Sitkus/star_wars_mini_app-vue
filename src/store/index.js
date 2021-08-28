@@ -7,8 +7,10 @@ import mutations from './mutations';
 Vue.use(Vuex);
 
 const state = {
+    movie_title: '',
     movies: [],
-    characters: []
+    characters: [],
+    is_loading_characters: false
 };
 
 export default new Vuex.Store({

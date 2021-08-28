@@ -8,20 +8,35 @@ export default {
 
             console.log(data.results);
         } catch (err) {
-            console.error(err);
+            alert('Something wrong happened, please try again.');
         }
     },
 
     async fetchCharacters({ commit }, urls) {
+        commit('CLEAR_CHARACTERS');
+
         try {
-            const response = await Promise.all(urls);
-            // const data = await response.json();
+            const data = await Promise.all(
+                urls.map(async url => {
+                    const response = await fetch(url);
+                    const characterInfo = await response.json();
 
-            // commit('SET_CHARACTERS', data);
+                    return characterInfo;
+                })
+            );
 
-            console.log(response);
+            commit('SET_CHARACTERS', data);
+            commit('SET_IS_LOADING_CHARACTERS', false);
         } catch (err) {
-            console.error(err);
+            alert('Something wrong happened, please try again.');
         }
+    },
+
+    setMovieTitle({ commit }, title) {
+        commit('SET_MOVIE_TITLE', title);
+    },
+
+    setIsLoadingCharacters({ commit }, boolean) {
+        commit('SET_IS_LOADING_CHARACTERS', boolean);
     }
 };

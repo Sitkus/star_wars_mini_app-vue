@@ -1,0 +1,20 @@
+.table-wrapper {
+    margin-top: 5rem;
+    max-height: 30rem;
+    overflow-y: auto;
+}
+
+.characters {
+    text-align: left;
+    width: 100%;
+
+    &__caption {
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+}
+
+.table-header,
+.table-data {
+    padding: 0.2rem;
+}
