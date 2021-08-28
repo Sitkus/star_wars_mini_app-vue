@@ -10,7 +10,7 @@ module.exports = {
         parser: 'babel-eslint'
     },
     rules: {
-        quotes: ['error', 'single'],
+        quotes: ['error', 'single', { allowTemplateLiterals: true, avoidEscape: true }],
         semi: ['error', 'always'],
         'no-unused-vars': 'off',
         'no-console': 'off',
