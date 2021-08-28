@@ -7,9 +7,9 @@
             <FontAwesomeIcon icon="caret-right" />
         </router-link>
 
-        <router-link class="nav__link nav__link--last" to="/films">
+        <router-link class="nav__link nav__link--last" to="/movies">
             <span class="link-title">
-                Films
+                Movies
             </span>
             <FontAwesomeIcon icon="caret-right" />
         </router-link>

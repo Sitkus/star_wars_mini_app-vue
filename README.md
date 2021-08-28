@@ -1,6 +1,6 @@
 # Star Wars Mini App
 
-This project has an About and Films sections, in About page only sample text exists. In Films there are fetched movies list from [Star Wars Api](https://swapi.dev/) with some other functionality included.
+This project has an About and Movies sections, in About page only sample text exists. In Movies there are fetched movies list from [Star Wars Api](https://swapi.dev/) with some other functionality included.
 
 ## Project requirements
 

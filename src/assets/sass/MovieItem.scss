@@ -1,0 +1,50 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 243, 243);
+    padding: 2rem;
+    min-width: 30rem;
+    margin: 0 1.5rem 1.5rem;
+
+    &:first-child {
+        margin-left: 0rem;
+    }
+
+    &:last-child {
+        margin-right: 0rem;
+    }
+
+    &__side {
+        padding-right: 1rem;
+    }
+
+    &__side--last {
+        padding-right: 0rem;
+    }
+
+    &__heading-2 {
+        font-weight: 500;
+        font-size: 1.7rem;
+    }
+
+    &__heading-4 {
+        margin-bottom: 3rem;
+    }
+
+    &__heading-3 {
+        background-color: $light-gray;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        text-decoration: underline;
+
+        &:hover {
+            background-color: $yellow;
+        }
+    }
+}

@@ -6,7 +6,10 @@ import mutations from './mutations';
 
 Vue.use(Vuex);
 
-const state = {};
+const state = {
+    movies: [],
+    characters: []
+};
 
 export default new Vuex.Store({
     state,
