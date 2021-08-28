@@ -1,29 +1,31 @@
-# star_wars_mini_app
+# Star Wars Mini App
+
+This project has an About and Films sections, in About page only sample text exists. In Films there are fetched movies list from [Star Wars Api](https://swapi.dev/) with some other functionality included.
+
+## Project requirements
+
+Project required to use router, redux (vuex) and is built with Test-Driven Development(TDD) approach.
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
+### Runs JEST tests
 
-### Lints and fixes files
 ```
-npm run lint
+npm run test
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

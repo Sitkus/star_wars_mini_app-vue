@@ -1,28 +1,27 @@
 module.exports = {
-  root: true,
-  env: {
-    node: true
-  },
-  'extends': [
-    'plugin:vue/essential',
-    'eslint:recommended'
-  ],
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
-  rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
-  },
-  overrides: [
-    {
-      files: [
-        '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)'
-      ],
-      env: {
-        jest: true
-      }
-    }
-  ]
-}
+    root: true,
+    env: {
+        browser: true,
+        es6: true,
+        node: true
+    },
+    extends: ['plugin:vue/essential', 'eslint:recommended'],
+    parserOptions: {
+        parser: 'babel-eslint'
+    },
+    rules: {
+        quotes: ['error', 'single'],
+        semi: ['error', 'always'],
+        'no-unused-vars': 'off',
+        'no-console': 'off',
+        'no-v-html': 'off'
+    },
+    overrides: [
+        {
+            files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
+            env: {
+                jest: true
+            }
+        }
+    ]
+};
