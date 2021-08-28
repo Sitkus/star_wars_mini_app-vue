@@ -4,7 +4,7 @@ module.exports = {
         loaderOptions: {
             sass: {
                 prependData: `
-                    @import "@/assets/sass/global.scss";
+                    @import "@/assets/sass/Global/_colors.scss";
                 `
             }
         }
