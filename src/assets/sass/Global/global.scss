@@ -1,20 +1,4 @@
 /*------------------------------------*\
-  #Colors
-\*------------------------------------*/
-
-$black: #161616;
-$yellow: #ffd710;
-
-$gray: #686868;
-$light-gray: #f9f9f9;
-
-/*------------------------------------*\
-  #Font family
-\*------------------------------------*/
-
-$font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
-
-/*------------------------------------*\
   #Defaults
 \*------------------------------------*/
 
@@ -27,7 +11,6 @@ $font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 html {
-    font-family: $font-family;
     font-size: 10px;
     background-color: white;
     -webkit-text-size-adjust: 100%;
@@ -38,6 +21,7 @@ html {
 }
 
 body {
+    font-family: $font-family;
     min-width: 32rem;
     color: $black;
     font-size: 1.4rem;
