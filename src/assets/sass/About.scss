@@ -1,0 +1,17 @@
+.about {
+    padding: 0 5rem;
+    max-width: 70rem;
+
+    &__heading-1 {
+        margin-bottom: 3rem;
+        font-weight: 500;
+    }
+
+    &__paragraph {
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph--last {
+        margin-bottom: 0rem;
+    }
+}

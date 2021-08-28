@@ -3,19 +3,10 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import {
-    faPlusSquare,
-    faTimes,
-    faTrash,
-    faSearch,
-    faAngleDoubleRight,
-    faAngleDoubleLeft,
-    faAngleRight,
-    faAngleLeft
-} from '@fortawesome/free-solid-svg-icons';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-library.add(faPlusSquare, faTimes, faTrash, faSearch, faAngleDoubleRight, faAngleDoubleLeft, faAngleRight, faAngleLeft);
+library.add(faCaretRight);
 
 Vue.component('FontAwesomeIcon', FontAwesomeIcon);
 
