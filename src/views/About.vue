@@ -33,5 +33,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/sass/About.scss';
+@import '@/assets/sass/Views/About.scss';
 </style>

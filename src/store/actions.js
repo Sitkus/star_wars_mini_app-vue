@@ -5,8 +5,6 @@ export default {
             const data = await response.json();
 
             commit('SET_MOVIES', data.results);
-
-            console.log(data.results);
         } catch (err) {
             alert('Something wrong happened, please try again.');
         }
@@ -17,7 +15,7 @@ export default {
 
         try {
             const data = await Promise.all(
-                urls.map(async url => {
+                urls.map(async function fetchCharacterInfo(url) {
                     const response = await fetch(url);
                     const characterInfo = await response.json();
 

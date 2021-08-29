@@ -20,5 +20,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/sass/MovieList.scss';
+@import '@/assets/sass/Components/MovieList.scss';
 </style>

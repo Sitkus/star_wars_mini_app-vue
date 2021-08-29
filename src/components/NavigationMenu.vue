@@ -23,5 +23,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/sass/NavigationMenu.scss';
+@import '@/assets/sass/Components/NavigationMenu.scss';
 </style>

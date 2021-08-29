@@ -44,5 +44,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/sass/Movies.scss';
+@import '@/assets/sass/Views/Movies.scss';
 </style>

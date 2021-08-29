@@ -1,0 +1,13 @@
+.movie-list {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    max-width: calc(100vw - 4rem);
+}
+
+@media screen and (min-width: 768px) {
+    .movie-list {
+        max-width: calc(100vw - 18rem);
+        margin: 0rem;
+    }
+}

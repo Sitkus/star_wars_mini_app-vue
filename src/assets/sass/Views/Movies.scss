@@ -1,0 +1,11 @@
+.movies {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .movies {
+        margin: 0rem;
+    }
+}

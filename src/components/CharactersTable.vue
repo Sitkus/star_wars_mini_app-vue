@@ -1,10 +1,8 @@
 <template>
     <div class="table-wrapper">
-        <template v-if="!getCharacters.length && !isLoadingCharacters"></template>
+        <h5 v-if="!getCharacters.length && isLoadingCharacters">Loading characters...</h5>
 
-        <h5 v-else-if="!getCharacters.length && isLoadingCharacters">Loading characters...</h5>
-
-        <table v-else class="characters">
+        <table v-else-if="getCharacters.length && !isLoadingCharacters" class="characters">
             <caption class="characters__caption">
                 {{
                     caption
@@ -12,7 +10,7 @@
             </caption>
 
             <thead class="characters__thead">
-                <th class="table-header">ID</th>
+                <th class="table-header"></th>
                 <th class="table-header">Name</th>
                 <th class="table-header">Birth Year</th>
                 <th class="table-header">Gender</th>
@@ -49,5 +47,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/sass/CharactersTable.scss';
+@import '@/assets/sass/Components/CharactersTable.scss';
 </style>

@@ -1,12 +1,14 @@
 .table-wrapper {
     margin-top: 5rem;
     max-height: 30rem;
+    width: 100%;
     overflow-y: auto;
 }
 
 .characters {
     text-align: left;
     width: 100%;
+    padding: 0rem 1rem;
 
     &__caption {
         font-weight: 500;

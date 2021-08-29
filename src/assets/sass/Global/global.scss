@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    font-family: $font-family;
+    font-family: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif;
     min-width: 32rem;
     color: $black;
     font-size: 1.4rem;
@@ -58,5 +58,13 @@ h6 {
 
 .main-wrapper {
     display: flex;
-    padding: 3rem 0rem;
+    flex-direction: column;
+    padding: 2rem 0rem;
+}
+
+@media screen and (min-width: 768px) {
+    .main-wrapper {
+        flex-direction: row;
+        padding: 3rem 0rem;
+    }
 }
