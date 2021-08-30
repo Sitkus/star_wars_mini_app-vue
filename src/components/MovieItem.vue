@@ -4,7 +4,9 @@
             <h2 class="item__heading-2">{{ movie.title }}</h2>
             <h4 class="item__heading-4">{{ releaseDate }}</h4>
 
-            <a class="item__link" href="#" role="button" @click.prevent="loadCharacters">Show Characters</a>
+            <a class="item__link" href="#" role="button" data-testid="load-btn" @click.prevent="loadCharacters"
+                >Show Characters</a
+            >
         </aside>
 
         <aside class="item__side item__side--last">
@@ -15,6 +17,7 @@
 
 <script>
 import { mapActions } from 'vuex';
+
 export default {
     name: 'MovieItem',
 
