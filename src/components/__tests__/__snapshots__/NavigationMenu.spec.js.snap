@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationMenu.vue HTML structure persists 1`] = `
+<nav class="nav">
+  <router-link-stub to="/" data-testid="link" class="nav__link"><span class="link-title">
+            About
+        </span>
+    <fontawesomeicon-stub icon="caret-right"></fontawesomeicon-stub>
+  </router-link-stub>
+  <router-link-stub to="/movies" data-testid="link" class="nav__link nav__link--last"><span class="link-title">
+            Movies
+        </span>
+    <fontawesomeicon-stub icon="caret-right"></fontawesomeicon-stub>
+  </router-link-stub>
+</nav>
+`;

@@ -26,12 +26,6 @@
     </article>
 </template>
 
-<script>
-export default {
-    name: 'About'
-};
-</script>
-
 <style lang="scss" scoped>
 @import '@/assets/sass/Views/About.scss';
 </style>

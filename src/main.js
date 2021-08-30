@@ -10,10 +10,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 library.add(faCaretRight);
 
 Vue.component('FontAwesomeIcon', FontAwesomeIcon);
-
 Vue.config.productionTip = false;
-
 Vue.use(Vuex);
+
 const store = new Vuex.Store(storeConfig);
 
 new Vue({

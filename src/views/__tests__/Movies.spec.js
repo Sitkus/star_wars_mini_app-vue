@@ -50,9 +50,7 @@ describe('Movies.vue', () => {
         const wrapper = shallowMount(Movies, { localVue, store });
 
         expect(wrapper.vm.isLoading).toBe(true);
-
         await flushPromises();
-
         expect(wrapper.vm.isLoading).toBe(false);
     });
 

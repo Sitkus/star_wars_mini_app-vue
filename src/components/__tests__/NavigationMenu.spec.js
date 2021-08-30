@@ -24,4 +24,8 @@ describe('NavigationMenu.vue', () => {
         expect(links.at(0).element.getAttribute('to')).toBe('/');
         expect(links.at(1).element.getAttribute('to')).toBe('/movies');
     });
+
+    test('HTML structure persists', () => {
+        expect(wrapper.html()).toMatchSnapshot();
+    });
 });
