@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import flushPromises from 'flush-promises';
 import Vuex from 'vuex';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Movies from '../Movies.vue';
@@ -14,7 +14,7 @@ let actions;
 
 beforeEach(() => {
     actions = {
-        fetchMovies: jest.fn().mockResolvedValue('movies')
+        fetchMovies: jest.fn()
     };
 
     store = new Vuex.Store({
@@ -51,7 +51,7 @@ describe('Movies.vue', () => {
 
         expect(wrapper.vm.isLoading).toBe(true);
 
-        await Vue.nextTick();
+        await flushPromises();
 
         expect(wrapper.vm.isLoading).toBe(false);
     });
