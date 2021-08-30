@@ -1,6 +1,6 @@
 <template>
     <div class="table-wrapper">
-        <h5 v-if="!getCharacters.length && isLoadingCharacters">Loading characters...</h5>
+        <h5 v-if="!getCharacters.length && isLoadingCharacters" data-testid="loading">Loading characters...</h5>
 
         <table v-else-if="getCharacters.length && !isLoadingCharacters" class="characters">
             <caption class="characters__caption">
