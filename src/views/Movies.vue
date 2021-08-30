@@ -1,6 +1,6 @@
 <template>
     <section class="movies">
-        <p v-if="isLoading" class="loading">
+        <p v-if="isLoading" class="loading" data-testid="loading">
             Loading movies...
         </p>
 
