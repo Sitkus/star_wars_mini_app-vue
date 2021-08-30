@@ -16,12 +16,6 @@
     </nav>
 </template>
 
-<script>
-export default {
-    name: 'NavigationMenu'
-};
-</script>
-
 <style lang="scss" scoped>
 @import '@/assets/sass/Components/NavigationMenu.scss';
 </style>

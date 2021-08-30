@@ -1,6 +1,7 @@
 .table-wrapper {
     margin-top: 5rem;
-    max-height: 30rem;
+    min-height: 30rem;
+    max-height: calc(100vh - 30rem);
     width: 100%;
     overflow-y: auto;
 }

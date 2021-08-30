@@ -18,8 +18,17 @@
         padding-right: 1rem;
     }
 
+    &__side--column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     &__side--last {
         padding-right: 0rem;
+    }
+
+    &__headings-wrapper {
+        width: 100%;
     }
 
     &__heading-2 {
@@ -32,15 +41,17 @@
     }
 
     &__heading-3 {
-        background-color: $light-gray;
-        width: 4rem;
-        height: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: $light-gray;
+        width: 4rem;
+        height: 4rem;
+        margin-left: 2rem;
     }
 
     &__link {
+        align-self: flex-end;
         text-decoration: underline;
 
         &:hover {

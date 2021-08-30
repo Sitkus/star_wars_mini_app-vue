@@ -1,4 +1,3 @@
-import flushPromises from 'flush-promises';
 import Vuex from 'vuex';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import MovieItem from '../MovieItem.vue';
