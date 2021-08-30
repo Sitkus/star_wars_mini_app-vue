@@ -4,7 +4,7 @@ This project has an About and Movies sections, in About page only sample text ex
 
 ## Project requirements
 
-Project required to use router, redux (vuex) and is built with Test-Driven Development(TDD) approach.
+Project required to use router, redux (vuex) and is secured with unit tests using JEST.
 
 ## Project setup
 
